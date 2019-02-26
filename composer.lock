@@ -4,8 +4,78 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba81097bd3bedb9a9265465b0f578307",
+    "content-hash": "458195bd19637099602e8734362d8fc2",
     "packages": [
+        {
+            "name": "gmars/tp5-nestedsets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gmars/tp5-nestedsets.git",
+                "reference": "2955cee8068f5518afee0c75f034b0e3440f7cc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gmars/tp5-nestedsets/zipball/2955cee8068f5518afee0c75f034b0e3440f7cc7",
+                "reference": "2955cee8068f5518afee0c75f034b0e3440f7cc7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gmars\\nestedsets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "weiyongqiang",
+                    "email": "hayixia606@163.com"
+                }
+            ],
+            "description": "此扩展是thinkPHP5的nestendsets的扩展。能够方便的在项目中来管理有层级关系的数据结构。该扩展在算法上部分参考了Willfred di Vampo的nestedsets，实现了数据的插入，移动，删除，遍历等功能。",
+            "time": "2018-05-17T02:27:20+00:00"
+        },
+        {
+            "name": "gmars/tp5-rbac",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gmars/tp5-rbac.git",
+                "reference": "1147a8b510caa905ac88ddca3d8278b8e25696fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gmars/tp5-rbac/zipball/1147a8b510caa905ac88ddca3d8278b8e25696fd",
+                "reference": "1147a8b510caa905ac88ddca3d8278b8e25696fd",
+                "shasum": ""
+            },
+            "require": {
+                "gmars/tp5-nestedsets": "dev-master",
+                "topthink/think-migration": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gmars\\rbac\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "weiyongqiang",
+                    "email": "hayixia606@163.com"
+                }
+            ],
+            "description": "这个扩展是基于thinkPHP5框架的RBAC权限验证的扩展。使用本扩展能够快速的将RBAC权限控制器模块引入到自己的系统中。原则上本模块适合于任何PHP框架但是由于使用了thinkPHP5的特性所以使用composer安装到其他框架时需要做相应的修改。模块所需要的扩展库可以通过thinkPHP5的migration来做数据迁移。",
+            "time": "2018-08-16T07:49:36+00:00"
+        },
         {
             "name": "topthink/framework",
             "version": "v5.0.24",
@@ -58,6 +128,46 @@
             "time": "2019-01-11T08:04:58+00:00"
         },
         {
+            "name": "topthink/think-image",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-image.git",
+                "reference": "8586cf47f117481c6d415b20f7dedf62e79d5512"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-image/zipball/8586cf47f117481c6d415b20f7dedf62e79d5512",
+                "reference": "8586cf47f117481c6d415b20f7dedf62e79d5512",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*",
+                "topthink/framework": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "think\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "yunwuxin",
+                    "email": "448901948@qq.com"
+                }
+            ],
+            "description": "The ThinkPHP5 Image Package",
+            "time": "2016-09-29T06:05:43+00:00"
+        },
+        {
             "name": "topthink/think-installer",
             "version": "v1.0.12",
             "source": {
@@ -97,12 +207,54 @@
                 }
             ],
             "time": "2017-05-27T06:58:09+00:00"
+        },
+        {
+            "name": "topthink/think-migration",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-migration.git",
+                "reference": "debc818a4e3b3baff2f7295f1e693653c5ebd02e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-migration/zipball/debc818a4e3b3baff2f7295f1e693653c5ebd02e",
+                "reference": "debc818a4e3b3baff2f7295f1e693653c5ebd02e",
+                "shasum": ""
+            },
+            "require-dev": {
+                "topthink/framework": "5.1.x-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phinx\\": "phinx/src/Phinx",
+                    "think\\migration\\": "src"
+                },
+                "files": [
+                    "src/config.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "yunwuxin",
+                    "email": "448901948@qq.com"
+                }
+            ],
+            "time": "2017-10-23T06:22:42+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "gmars/tp5-rbac": 20,
+        "gmars/tp5-nestedsets": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -6,7 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'think\\migration\\' => array($vendorDir . '/topthink/think-migration/src'),
     'think\\composer\\' => array($vendorDir . '/topthink/think-installer/src'),
-    'think\\' => array($baseDir . '/thinkphp/library/think'),
+    'think\\' => array($baseDir . '/thinkphp/library/think', $vendorDir . '/topthink/think-image/src'),
+    'gmars\\rbac\\' => array($vendorDir . '/gmars/tp5-rbac/src'),
+    'gmars\\nestedsets\\' => array($vendorDir . '/gmars/tp5-nestedsets/src'),
     'app\\' => array($baseDir . '/application'),
+    'Phinx\\' => array($vendorDir . '/topthink/think-migration/phinx/src/Phinx'),
 );

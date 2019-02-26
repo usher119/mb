@@ -240,4 +240,8 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+    //数据迁移
+    'migration' => [
+        'path' => ROOT_PATH .'vendor/gmars/tp5-rbac/'
+    ],
 ];
